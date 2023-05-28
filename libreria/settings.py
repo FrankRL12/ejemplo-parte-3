@@ -107,12 +107,14 @@ WSGI_APPLICATION = 'libreria.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        conn_max_age=600,
-        conn_health_checks=True,
-    ),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        **dj_database_url.config(
+            conn_max_age=600,
+            conn_health_checks=True,
+        ),
+    }
 }
-
 
 
 # Password validation
