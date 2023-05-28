@@ -9,7 +9,7 @@ python manage.py collectstatic --no-input
 python manage.py migrate
 
 # Variables de entorno para el superusuario
-SUPERUSER_USERNAME="admin1"
+SUPERUSER_USERNAME="admin2"
 SUPERUSER_EMAIL="Adolfo95lopez95@gmail.com"
 SUPERUSER_PASSWORD="1234567"
 
