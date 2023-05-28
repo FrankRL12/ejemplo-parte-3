@@ -6,11 +6,10 @@ pip install -r requirements.txt
 
 
 python manage.py collectstatic --no-input
-python manage.py makemigrations
 python manage.py migrate
 
 # Variables de entorno para el superusuario
-SUPERUSER_USERNAME="adolfo1"
+SUPERUSER_USERNAME="adolfo5"
 SUPERUSER_EMAIL="Adolfo95lopez95@gmail.com"
 SUPERUSER_PASSWORD="1234567"
 
